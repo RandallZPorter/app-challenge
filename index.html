@@ -1,8 +1,42 @@
 <!doctype html>
-<html>
-<head>
-</head>
+<html lang="en">
 
-<body>
-</body>
+<head>
+         <!-- Required meta tags -->
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         <meta name="author" content="Randall Porter">
+         
+         <!-- CSS -->
+         <link href="css/porter.css" rel="stylesheet">
+   
+         <title>Task Estimator</title>
+         <header><h1>App Challenge: Task Estimator	</h1></header>
+      </head>
+
+
+
+	<body class="primary-box">
+		<main>
+			<p>Number of Stories:
+				<input id="firstNumber" type="number" value="">
+			</p>
+			<p>Average Tasks per Story:
+				<input id="secondNumber" type="number" value="">
+			</p>
+			<button id="calcButton">Calculate</button>
+			<p id="result"></p>
+		</main>
+			<script>
+			function calc(a, b) {
+				return a * b
+			}
+			document.getElementById('calcButton').addEventListener('click', function () {
+				const a = parseInt(document.getElementById('firstNumber').value)
+				const b = parseInt(document.getElementById('secondNumber').value)
+				const ans = 'Total tasks: ' + calc(a, b) + '.'
+				document.getElementById('result').innerHTML = ans
+			})
+		</script>
+	</body>
 </html>

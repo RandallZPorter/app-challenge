@@ -1,0 +1,152 @@
+body {
+  background-color:darkslategrey;
+}
+
+.navbar-outer {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2em;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+}
+.img-circle {
+  padding: 0.9em;
+  position: relative;
+  z-index: 999;
+}
+.navbar-block {
+  background-color: darkslategrey;
+  border-radius: 10em;
+}
+space-buffer {
+  padding-right: 10em;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkslategrey;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  padding: 0.3em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: lightslategray;
+}
+
+h1 {
+  margin-top: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+.text {
+  text-indent: 2em;
+}
+
+.primary-box {
+  padding: 0.5em;
+  margin: 0.5em;
+  outline: 0.2em groove lightslategray;
+  display: grid;
+  grid-row: 1 / span 12;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.article-secondary-box {
+  padding: 0.5em;
+  margin: 0.5em;
+  outline: 0.1em groove lightslategray;
+  display: grid;
+  grid-row: 1 / span 4;
+}
+
+.code {
+  background-color: lightgrey;
+  color: black;
+  padding: 0.2em;
+  margine: 0.2em;
+}
+.code p {
+  margin: 0.2em;
+  padding: 0.2em;
+}
+.code table tr th {
+  padding-right: 0.4em;
+  padding-right: 0.4em;
+  border: 0.1em solid black;
+}
+.code table tr td {
+  padding-right: 0.4em;
+  padding-right: 0.4em;
+  border: 0.1em solid black;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 0.9em; 
+  border: 0.1em solid #ccc;
+  border-radius: 0.3em;
+  box-sizing: border-box;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  resize: vertical;
+}
+
+input[type=button] {
+  background-color: darkslategrey;
+  color: white;
+  padding: 0.9em 1.7em;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+
+input[type=button]:hover {
+  background-color: lightslategrey;
+}
+
+.container {
+  border-radius: 0.4em;
+  background-color: #f2f2f2;
+  padding: 1.7em;
+}
+
+#links {
+  list-style-type: none;
+  display: flex;
+  margin: 1em;
+}
+
+#links li {
+  padding: 1em;
+}
+
+footer {
+  color: white;
+  margin-left: 1em;
+}
